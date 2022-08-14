@@ -50,7 +50,7 @@ class MaturidadeDados {
                 <p className="NormalText">Ter uma base estruturada com dados integrados pode trazer muito conhecimento para o negócio e pode ser realmente um diferencial incrível, mas simplesmente ter essa tecnologia à disposição não é o que faz a diferença. É necessário ter uma visão clara de como extrair informação, a fim de se obter conhecimento e sabedoria para o negócio. <span className="bold">O grau de Maturidade de Dados de um negócio não é diretamente proporcional à quantidade de dados coletados, mas sim ao volume e complexidade das informações extraídas e utilizadas.</span></p> 
 
                 <div className="References">
-                <p>Onde esse texto também aparece:</p>
+                    <p>Este texto também foi publicado em:</p>
                     <ul>
                         <li><a href="https://www.ecommercebrasil.com.br/articles/a-revolucao-digital-decisoes-pelos-dados/">Ecommerce Brasil.</a></li>
                     </ul>
