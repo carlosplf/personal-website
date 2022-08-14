@@ -56,6 +56,18 @@
     margin-left: 10%;
 }
 
+.DateContainer{
+    margin-left: 10%;
+    margin-bottom: 40px;
+}
+
+.ArticleDate{
+    font-size: 1.0em;
+    color: #282828;
+    text-align: left;
+    font-style: italic;
+}
+
 .BodyContainer{
     margin-left: 10%;
 }

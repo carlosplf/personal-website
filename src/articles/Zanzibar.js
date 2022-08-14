@@ -1,12 +1,18 @@
 class Zanzibar {
 
-    title() {
+    getTitle() {
         return(
             <h1 className="ArticleTitle"> Zanzibar: O Sistema de autorizações global do Google.</h1>
         );
     }
 
-    body() {
+    getDate() {
+        return(
+            <p className="ArticleDate"> 14 de Agosto de 2022.</p>
+        );
+    }
+
+    getBody() {
         return(
             <div className="ArticleBody">
                 <p className="NormalText"> Estima-se que o Google possua hoje mais de 1 bilhão de usuários ativos no Google Drive e quase 2 bilhões de usuários ativos no GMail. Para controlar permissões, acessos e compartilhamentos, o Google desenvolveu um sistema global denominado <span className="bold">Zanzibar</span>. O sistema é usado em produtos do próprio Google como Drive, Maps e Photos, impactando a vida de bilhões de pessoas. Vamos ver como ele funciona, e como ele garante o controle de acessos e níveis de permissões em escala global e com baixa latência. Esse artigo é meramente um resumo do artigo original, que pode ser encontrado <a href="https://research.google/pubs/pub48190/">aqui</a>.</p>

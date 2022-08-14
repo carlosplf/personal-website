@@ -1,12 +1,18 @@
 class MaturidadeDados {
 
-    title() {
+    getTitle() {
         return(
             <h1 className="ArticleTitle"> Integrar os dados é só o primeiro passo. </h1>
         );
     }
+    
+    getDate() {
+        return(
+            <p className="ArticleDate"> 14 de Agosto de 2022.</p>
+        );
+    }
 
-    body() {
+    getBody() {
         return(
             <div className="ArticleBody">
                 <p className="NormalText"> Empresas e negócios precisam lidar com um volume cada vez maior de dados não estruturados, e apesar da tecnologia ser cada vez mais acessível, a tarefa é cada vez mais complexa.</p>

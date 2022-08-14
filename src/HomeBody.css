@@ -1,20 +1,26 @@
 .HomeBody{
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: left;
     margin-top: 100px;
     padding-left: 10%;
+    width: 80%;
+}
+
+.HomeBody h1{
+    font-size: 1.8em;
+    color: #202020;
 }
 
 .ArticleLink{
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 40px;
 }
 
 .ArticleLink a{
-    text-decoration: underline;
     color: #202020;
     font-size: 1.4em;
+    text-decoration: underline;
 }
 
 @media only screen

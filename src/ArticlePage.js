@@ -8,10 +8,13 @@ function ArticlePage(props) {
             <Header/>
             <div className="ArticleContainer">
                 <div className="TitleContainer">
-                    {props.content.title()}
+                    {props.content.getTitle()}
+                </div>
+                <div className="DateContainer">
+                    {props.content.getDate()}
                 </div>
                 <div className="BodyContainer">
-                    {props.content.body()}
+                    {props.content.getBody()}
                 </div>
             </div>
         </div>

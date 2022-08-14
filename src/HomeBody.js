@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function HomeBody() {
     return(
         <div className="HomeBody">
-            <h1>Meus textos:</h1>
+            <h1>Textos:</h1>
             <div className="ArticleLink">
                 <Link to="/maturidade_dados">Integrar os Dados é só o Começo.</Link>
             </div>
