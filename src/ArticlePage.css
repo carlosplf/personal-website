@@ -1,0 +1,97 @@
+.ArticleContainer{
+    width: 60%;
+    margin-top: 80px;
+    font-family: Source Serif Pro, serif;
+    padding-bottom: 100px;
+}
+
+.ArticleImg{
+    width: 100%;
+    text-align: center;
+}
+
+.ArticleImg p{
+    text-align: right;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.ArticleImg img{
+    display: block;
+    max-width:100%;
+    max-height:500px;
+    width: auto;
+    height: auto;
+}
+
+.References{
+    margin-top: 80px;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.References p{
+    color: #FF6833;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.Quote{
+    text-align: center;
+    font-size: 1.6em;
+    font-style: italic;
+    font-weight: bold; 
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.SubTitle{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.TitleContainer{
+    margin-left: 10%;
+}
+
+.BodyContainer{
+    margin-left: 10%;
+}
+
+.NormalText{
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.Code{
+    background-color: #DDD;
+    font-size: 1.2em;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: left;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.altColor{
+    color: #ff7043;
+}
+
+@media only screen
+and (max-width : 1080px){
+    .ArticleContainer{
+        width: 90%;
+        margin-top: 80px;
+    }
+}
