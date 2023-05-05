@@ -11,19 +11,38 @@
 .HomeBody h1{
     font-size: 1.8em;
     color: #383838;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
-.ArticleLink{
+.ArticleSession{
+    display: flex;
     width: 100%;
     margin-top: 20px;
 }
 
-.ArticleLink a{
+.ArticleDetails a{
     color: #202020;
     font-size: 1.4em;
     text-decoration: underline;
+}
+
+.ArticleIcon {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 10px ;
+}
+
+.ArticleLink{
+    margin-top: 30px;
+}
+
+.ArticleLink a{
+    font-size: 1.4em;
+    color: #333;
+    text-decoration: none;
 }
 
 @media only screen

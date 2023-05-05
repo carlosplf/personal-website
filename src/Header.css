@@ -2,7 +2,7 @@
     width: 100%;
     background-color: #FFF;
     padding-top: 10px;
-    padding-left: 20px;
+    padding-left: 60px;
     color: #181818;
     border-bottom: 2px solid #181818;
 }
@@ -18,9 +18,6 @@
 
 #SiteName:hover{
     cursor: pointer;
-}
-
-#Subtitle{
 }
 
 @media only screen
