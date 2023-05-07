@@ -15,19 +15,19 @@
     margin-bottom: 20px;
 }
 
-.ArticleSession{
+.ProjectSession{
     display: flex;
     width: 100%;
     margin-top: 20px;
 }
 
-.ArticleDetails a{
+.ProjectDetails a{
     color: #202020;
     font-size: 1.4em;
     text-decoration: underline;
 }
 
-.ArticleIcon {
+.ProjectIcon {
     width: 100px;
     height: 100px;
     margin-right: 20px;
@@ -42,7 +42,30 @@
 .ArticleLink a{
     font-size: 1.4em;
     color: #333;
-    text-decoration: none;
+    text-decoration: underline;
+}
+
+.AllProjects{
+    margin-top: 60px;
+}
+
+.About{
+    padding-bottom: 20px;
+    border-bottom: 2px solid #181818;
+}
+
+.About h1{
+    margin-bottom: 40px;
+}
+.About p{
+    margin-top: 20px;
+    font-size: 1.0em;
+}
+
+.Articles{
+    margin-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #181818;
 }
 
 @media only screen
@@ -50,5 +73,51 @@ and (max-width : 1080px){
     .HomeBody{
         width: 90%;
         margin-top: 80px;
+    }
+
+    .ProjectDetails {
+        font-size: 1.0em;
+        margin-top: 60px;
+    }
+
+    .ProjectIcon{
+        margin-top: 10%;
+        padding: 20px;
+    }
+
+    .HomeBody h1{
+        font-size: 3.4em;
+    }
+
+    .ArticleLink{
+        font-size: 1.2em;
+        margin-top: 40px;
+    }
+
+    .AllProjects{
+        margin-top: 80px;
+    }
+
+    .AllProjects{
+        margin-top: 60px;
+    }
+    
+    .About{
+        padding-bottom: 40px;
+        border-bottom: 2px solid #181818;
+    }
+    
+    .About h1{
+        margin-bottom: 40px;
+    }
+    .About p{
+        margin-top: 20px;
+        font-size: 1.0em;
+    }
+    
+    .Articles{
+        margin-top: 40px;
+        padding-bottom: 80px;
+        border-bottom: 2px solid #181818;
     }
 }
