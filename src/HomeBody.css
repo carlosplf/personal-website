@@ -139,4 +139,21 @@ and (max-width : 1080px){
         padding-bottom: 80px;
         border-bottom: 2px solid #181818;
     }
+
+    .SocialLink{
+        height: 40px;
+        margin-top: 60px;
+    }
+    
+    .SocialLink a{
+        font-size: 1.8em;
+        color: #222222;
+    }
+    
+    .SocialIcon{
+        height: 40px;
+        width: 40px;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
 }
