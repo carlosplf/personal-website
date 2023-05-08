@@ -11,7 +11,15 @@ function HomeBody() {
                 <p>Diretor de Tecnologia e CTO Brasil na Media.Monks.</p>
                 <p>Coordenador de mercado no ITI MBA, da UFSCar.</p>
                 <p>Aluno de Mestrado em Machine Learning pela UFSCar.</p>
-                <a href="https://www.linkedin.com/in/carlosplf/">LinkedIn</a>
+                <div className="SocialLink">
+                    <img className="SocialIcon" src="./images/linkedin-logo.jpeg"/> <a href="https://www.linkedin.com/in/carlosplf/"> LinkedIn </a>
+                </div>
+                <div className="SocialLink">
+                    <img className="SocialIcon" src="./images/github-logo.jpeg"/> <a href="https://github.com/carlosplf/"> GitHub </a>
+                </div>
+                <div className="SocialLink">
+                    <img className="SocialIcon" src="./images/twitter-logo.jpeg"/> <a href="https://twitter.com/carlosplfilho/"> Twitter </a>
+                </div>
             </div>
 
             <div className="Articles">
