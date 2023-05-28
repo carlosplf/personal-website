@@ -25,6 +25,9 @@ function HomeBody() {
             <div className="Articles">
                 <h1>&#128214; - Textos:</h1>
                 <div className="ArticleLink">
+                    <Link to="/notion-gpt">Notion + ChatGPT.</Link>
+                </div>
+                <div className="ArticleLink">
                     <Link to="/maturidade_dados">Integrar os Dados é só o Começo.</Link>
                 </div>
                 <div className="ArticleLink">

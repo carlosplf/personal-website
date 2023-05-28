@@ -40,9 +40,12 @@
 }
 
 .ArticleLink a{
-    font-size: 1.4em;
-    color: #333;
-    text-decoration: underline;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    background: linear-gradient(to right bottom, #595cff, #bf0fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .AllProjects{
