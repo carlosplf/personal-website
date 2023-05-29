@@ -99,7 +99,8 @@
 .bold{
     font-weight: bold;
     font-size: 1.0em;
-    background: linear-gradient(to right bottom, #595cff, #bf0fff);
+    background: rgb(0,74,172);
+    background: linear-gradient(90deg, rgba(0,74,172,1) 0%, rgba(0,187,255,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -115,7 +116,7 @@
 @media only screen
 and (max-width : 1080px){
     .ArticleContainer{
-        width: 90%;
+        width: 100%;
         margin-top: 80px;
     }
 }
