@@ -65,7 +65,7 @@ class NotionChatGPT{
                 <p class="SubTitle">&#128272; Chaves de APIs</p>
                 <p class="NormalText">
                     O software precisará de algumas chaves e IDs para funcionar corretamente. Siga este <a href="https://developers.notion.com/docs/authorization">tutorial do próprio Notion</a> para conseguir 
-                    o DATASET_ID e a API_KEY e armezene esses valores no arquivo <span className="italic"> 'notion_credentials.json'</span>.
+                    o DATASET_ID e a API_KEY e armezene esses valores no arquivo <span className="italic"> '.env'</span>.
                 </p>
                 <p class="NormalText">
                     Usaremos também a API do Google GMail para enviar os emails diários de report, e precisamos criar as credenciais de serviço.
@@ -101,10 +101,17 @@ class NotionChatGPT{
                 <p class="NormalText">
                     Primeiro, precisamos chamar a API do Notion e coletar as tarefas presentes em nosso 'Painel de Controle'. Para isso, 
                     vamos definir nossa <spam className="bold"> Chave de API e ID do Dataset</spam>. Ambas são armazenadas no 
-                    arquivo <span className="italic"> 'notion_credentials.json'</span>, na raiz do projeto, seguindo o seguinte formato:
+                    arquivo <span className="italic"> '.env'</span>, na raiz do projeto, seguindo o seguinte formato:
                 </p>
                 <SyntaxHighlighter language="javascript" style={docco}>
-                    {"{'database_id': '8be590...', 'notion_key': 'secret_x1ld67...'}"}
+                    {"\
+                        \nOPENAI_KEY=\"sk-rmiH...\"\
+                        \nEMAIL_FROM=\"example@gmail.com\"\
+                        \nEMAIL_TO=\"example@gmail.com\"\
+                        \nDISPLAY_NAME=\"Carlos\"\
+                        \nNOTION_DATABASE_ID=\"8be43e...\"\
+                        \nNOTION_API_KEY=\"secret_x0l...\"\
+                    "}
                 </SyntaxHighlighter>
 
                 <p class="NormalText">
@@ -145,26 +152,19 @@ class NotionChatGPT{
                 </div>
 
                 <p class="NormalText">
-                    Lembrando que as configurações de endereço de emails (tanto o 'from' quanto o 'to'), bem como o nome do usuário que irá 
-                    receber o report, podem ser encontradas e modificadas no arquivo 'email_config.json', seguindo o formato mostrado abaixo.
+                    <span className="bold">IMPORTANTE:</span> as configurações de endereço de emails (tanto o 'from' quanto o 'to'), bem como o nome do usuário que irá 
+                    receber o report, podem ser inseridas e modificadas no arquivo '.env'.
                 </p>
-                <SyntaxHighlighter language="javascript" style={docco}>
-                    {"\n{\n    \"email_from\": \"example_email@gmail.com\", \n    \"email_to\": \"example_email@gmail.com\", \n    \"display_name\": \"Carlos\"\n}"}
-                </SyntaxHighlighter>
-
+                
                 <p class="SubTitle">&#127919; Resumindo...</p>
                 <p class="NormalText">
                     O repositório no GitHub contém as instruções mais diretas (e talvez mais completas) de como rodar o programa. 
-                    Mas, tentando colocar de forma mais prática, <span className="bold">montei um passo a passo:</span>
+                    Mas, tentando colocar de forma mais prática, <span className="bold">este é o fluxo que deve ser seguido:</span>
                 </p>
                 <p className="NormalText">
                     <ol>
                         <li>Garanta que o 'Painel de Controle' no Notion esteja configurado corretamente, contendo os campos necessários.</li>
-                        <li>Crie uma chave de API Notion e colete o Dataset ID.</li>
-                        <li>Crie um projeto no Google Cloud e uma credenciais para o uso da API do Gmail.</li>
-                        <li>Crie uma chave de API na OpenAI para uso do ChatGPT.</li>
-                        <li>Configure as opções de emails no 'email_config.json'.</li>
-                        <li>Garanta que os arquivos 'credentials.json', 'notion_credentials.json', '.env' e 'email_config.json' estejam preenchidos corretamente e no local correto (raiz do projeto).</li>
+                        <li>Preencha o arquivo '.env' com as credenciais de Notion, Gmail e ChatGPT.</li>
                         <li>Instale as bibliotecas Python necessárias presentes no 'requirements.txt'.</li>
                         <li>Execute o arquivo 'run.py'.</li>
                     </ol>  
