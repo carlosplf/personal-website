@@ -92,6 +92,12 @@ class NotionChatGPT{
                     Todo o software foi feito usando a linguagem de programação Python, e abaixo explico algumas partes do projeto, para que fique claro como 
                     a integração foi feita.
                 </p>
+
+                <div className="ArticleImg">
+                    <img src="images/software-flow.png" alt="Software schema and data flow."/>
+                    <p> Resumo de fluxo dos dados e processamento.</p>
+                </div>
+
                 <p class="NormalText">
                     Primeiro, precisamos chamar a API do Notion e coletar as tarefas presentes em nosso 'Painel de Controle'. Para isso, 
                     vamos definir nossa <spam className="bold"> Chave de API e ID do Dataset</spam>. Ambas são armazenadas no 
