@@ -18,13 +18,11 @@
 .ProjectSession{
     display: flex;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .ProjectDetails a{
-    color: #202020;
     font-size: 1.4em;
-    text-decoration: underline;
 }
 
 .ProjectIcon {
@@ -43,7 +41,6 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
-    background: rgb(0,74,172);
     background: linear-gradient(90deg, rgba(0,74,172,1) 0%, rgb(29, 155, 240) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -72,6 +69,10 @@
     border-bottom: 2px solid #181818;
 }
 
+.SocialLinks{
+    margin-top: 40px;
+}
+
 .SocialLink{
     display: flex;
     flex-direction: row;
@@ -91,6 +92,24 @@
     width: 20px;
     border-radius: 4px;
     margin-right: 10px;
+}
+
+#brdata_link{
+    font-weight: bold;
+    background: linear-gradient(90deg, rgb(0, 118, 4) 0%, rgb(226, 214, 43) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#catsdogs_link{
+    font-weight: bold;
+    background: linear-gradient(90deg, rgb(189, 28, 243) 0%, rgb(43, 99, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-external-link{
+    margin-right: 20px;
 }
 
 @media only screen
@@ -162,4 +181,14 @@ and (max-width : 1080px){
         border-radius: 4px;
         margin-right: 10px;
     }
+
+    .ProjectDetails{
+        color: #202020;
+        font-size: 1.2em;
+    }
+
+    .ProjectIcon{
+        margin-top: 80%;
+    }
+    
 }

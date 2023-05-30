@@ -36,7 +36,7 @@ class NotionChatGPT{
                 <p class="NormalText">
                     Minha ideia aqui é explicar o que fiz e como executar para que, quem sabe, eu possa tornar o dia de alguém melhor.
                 </p>
-                <p class="NormalText">Todo o projeto é aberto e pode ser encontrado em meu <a href="https://github.com/carlosplf/personal-notion-integration">GitHub</a>. 
+                <p class="NormalText">Todo o projeto é aberto e pode ser encontrado em meu <a href="https://github.com/carlosplf/personal-notion-integration"><i className="fa fa-external-link"></i> GitHub</a>. 
                     Tenho planos de tornar o software mais fácil de usar, onde não existe a necessidade de mexer com código. Planos futuros :)
                 </p>
 
@@ -64,12 +64,12 @@ class NotionChatGPT{
                 
                 <p class="SubTitle">&#128272; Chaves de APIs</p>
                 <p class="NormalText">
-                    O software precisará de algumas chaves e IDs para funcionar corretamente. Siga este <a href="https://developers.notion.com/docs/authorization">tutorial do próprio Notion</a> para conseguir 
+                    O software precisará de algumas chaves e IDs para funcionar corretamente. Siga este <a href="https://developers.notion.com/docs/authorization"><i className="fa fa-external-link"></i> tutorial do próprio Notion</a> para conseguir 
                     o DATASET_ID e a API_KEY e armezene esses valores no arquivo <span className="italic"> '.env'</span>.
                 </p>
                 <p class="NormalText">
                     Usaremos também a API do Google GMail para enviar os emails diários de report, e precisamos criar as credenciais de serviço.
-                    Para isso, basta seguir o tutorial do próprio Google sobre o tema, <a href="https://developers.google.com/gmail/api/quickstart/python">encontrado aqui</a>. 
+                    Para isso, basta seguir o tutorial do próprio Google sobre o tema, <a href="https://developers.google.com/gmail/api/quickstart/python"><i className="fa fa-external-link"></i> encontrado aqui</a>. 
                     Siga os passos para a criação de um projeto no Google Cloud, habilitação da API do Gmail e download das credenciais. 
                     Salve o arquivo na raiz do projeto como <span className="italic">'credentials.json'</span>.
                 </p>
@@ -78,8 +78,8 @@ class NotionChatGPT{
                 </p>
                 <p class="NormalText">
                     Por último, precisaremos de uma chave de API da OpenAI, para poder chamar o ChatGPT via API. Esse serviço é pago, e os valores 
-                    podem ser encontrados <a href="https://openai.com/pricing"> aqui</a>. Para criar uma chave, basta estar logado no site da OpenAI e 
-                    criar uma nova chave <a href="https://platform.openai.com/account/api-keys"> aqui</a>. Um meio de pagamento precisa estar configurado 
+                    podem ser encontrados <a href="https://openai.com/pricing"><i className="fa fa-external-link"></i>  aqui</a>. Para criar uma chave, basta estar logado no site da OpenAI e 
+                    criar uma nova chave <a href="https://platform.openai.com/account/api-keys"><i className="fa fa-external-link"></i>  aqui</a>. Um meio de pagamento precisa estar configurado 
                     na plataforma. Salvaremos essa chave de API no documento <span className="italic"> '.env'</span>, na raiz do projeto, e seguinto o formato abaixo.
                 </p>
 
@@ -117,7 +117,7 @@ class NotionChatGPT{
                 <p class="NormalText">
                     Com os valores de Chave de API e ID do Dataset armazenados no arquivo JSON, o software irá carregar as 
                     credenciais e chamar a API para buscar as tarefas. O trecho de código abaixo é responsável por essa requisição. 
-                    Vale ressaltar que todo o código está disponível no <a href="https://github.com/carlosplf/personal-notion-integration">GitHub</a>. 
+                    Vale ressaltar que todo o código está disponível no <a href="https://github.com/carlosplf/personal-notion-integration"><i className="fa fa-external-link"></i> GitHub</a>. 
                 </p>
 
                 <div className="ArticleImg">
@@ -139,7 +139,7 @@ class NotionChatGPT{
                 <p class="NormalText">
                     Como última parte do projeto, vamos montar o HTML e enviar via email para o usuário. Para enviar o email, vamos 
                     chamar a API do GMail, e para isso iremos contar com as credenciais salvas em 'credentials.json', na raiz do projeto.
-                    Também usei o <a href="https://jinja.palletsprojects.com/en/3.1.x/intro/">Jinja2</a> para montar o HTML. O HTML base 
+                    Também usei o <a href="https://jinja.palletsprojects.com/en/3.1.x/intro/"><i className="fa fa-external-link"></i> Jinja2</a> para montar o HTML. O HTML base 
                     que serve como template para o email pode ser encontrado na pasta 'templates/' do projeto.
                 </p>
                 <p class="NormalText">
