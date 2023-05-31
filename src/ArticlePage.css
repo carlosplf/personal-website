@@ -31,7 +31,7 @@
 }
 
 .References p{
-    color: #FF6833;
+    color: #242424;
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -125,6 +125,14 @@ and (max-width : 1080px){
     }
 
     .BodyContainer{
+        margin-left: 4%;
+    }
+
+    .TitleContainer{
+        margin-left: 4%;
+    }
+
+    .DateContainer{
         margin-left: 4%;
     }
 }

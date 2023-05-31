@@ -8,7 +8,7 @@ function HomeBody() {
 
             <div className="About">
                 <h1>&#128188; - Sobre mim:</h1>
-                <p>Diretor de Tecnologia e CTO Brasil na Media.Monks.</p>
+                <p>Diretor de Tecnologia e CTO Brasil na <a id="media_monks_link" href="https://media.monks.com/">Media.Monks</a>.</p>
                 <p>Coordenador de mercado no ITI MBA, da UFSCar.</p>
                 <p>Aluno de Mestrado em Machine Learning pela UFSCar.</p>
                 <div className="SocialLinks">

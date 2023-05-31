@@ -18,7 +18,7 @@
 .ProjectSession{
     display: flex;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .ProjectDetails a{
@@ -47,12 +47,7 @@
 }
 
 .AllProjects{
-    margin-top: 60px;
-}
-
-.About{
-    padding-bottom: 20px;
-    border-bottom: 2px solid #181818;
+    margin-top: 20px;
 }
 
 .About h1{
@@ -60,13 +55,13 @@
 }
 .About p{
     margin-top: 20px;
+    margin-bottom: 10px;
     font-size: 1.0em;
+    text-align: justify;
 }
 
 .Articles{
-    margin-top: 40px;
-    padding-bottom: 40px;
-    border-bottom: 2px solid #181818;
+    margin-top: 20px;
 }
 
 .SocialLinks{
@@ -108,6 +103,13 @@
     -webkit-text-fill-color: transparent;
 }
 
+#media_monks_link{
+    font-weight: bold;
+    background: linear-gradient(90deg, #FFB2E8 0%, #4F24EE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .fa-external-link{
     margin-right: 6px;
 }
@@ -141,28 +143,18 @@ and (max-width : 1080px){
     .AllProjects{
         margin-top: 80px;
     }
-
-    .AllProjects{
-        margin-top: 60px;
-    }
-    
-    .About{
-        padding-bottom: 40px;
-        border-bottom: 2px solid #181818;
-    }
     
     .About h1{
         margin-bottom: 40px;
     }
     .About p{
         margin-top: 20px;
-        font-size: 1.0em;
+        font-size: 1.2em;
+        margin-bottom: 20px;
     }
     
     .Articles{
-        margin-top: 40px;
-        padding-bottom: 80px;
-        border-bottom: 2px solid #181818;
+        margin-top: 80px;
     }
 
     .SocialLink{
@@ -171,7 +163,7 @@ and (max-width : 1080px){
     }
     
     .SocialLink a{
-        font-size: 1.8em;
+        font-size: 2.4em;
         color: #222222;
     }
     
