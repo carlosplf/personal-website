@@ -10,6 +10,7 @@ import ArticlePage from './ArticlePage.js';
 import Zanzibar from './articles/Zanzibar.js';
 import MaturidadeDados from './articles/MaturidadeDados.js';
 import NotionChatGPT from './articles/NotionChatGPT';
+import CatsDogsProject from './articles/CatsDogsProject';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/maturidade_dados" element={<ArticlePage content={new MaturidadeDados()}/>} />
             <Route path="/zanzibar" element={<ArticlePage content={new Zanzibar()}/>} />
             <Route path="/notion-gpt" element={<ArticlePage content={new NotionChatGPT()}/>} />
+            <Route path="/cats-and-dogs" element={<ArticlePage content={new CatsDogsProject()}/>} />
         </Routes>
     </div>
   );
