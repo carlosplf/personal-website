@@ -1,5 +1,4 @@
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { CodeBlock, atomOneDark } from "react-code-blocks";
 
 
 class NotionChatGPT{
@@ -80,12 +79,8 @@ class NotionChatGPT{
                     Por último, precisaremos de uma chave de API da OpenAI, para poder chamar o ChatGPT via API. Esse serviço é pago, e os valores 
                     podem ser encontrados <a href="https://openai.com/pricing"><i className="fa fa-external-link"></i>  aqui</a>. Para criar uma chave, basta estar logado no site da OpenAI e 
                     criar uma nova chave <a href="https://platform.openai.com/account/api-keys"><i className="fa fa-external-link"></i>  aqui</a>. Um meio de pagamento precisa estar configurado 
-                    na plataforma. Salvaremos essa chave de API no documento <span className="italic"> '.env'</span>, na raiz do projeto, e seguinto o formato abaixo.
+                    na plataforma. Salvaremos essa chave de API no documento <span className="italic"> '.env'</span> na raiz do projeto.
                 </p>
-
-                <SyntaxHighlighter language="javascript" style={docco}>
-                    {"OPENAI_KEY=\"sk-rmiH...\""}
-                </SyntaxHighlighter>
 
                 <p class="SubTitle">&#128640; It's time to code</p>
                 <p class="NormalText">
@@ -103,16 +98,20 @@ class NotionChatGPT{
                     vamos definir nossa <spam className="bold"> Chave de API e ID do Dataset</spam>. Ambas são armazenadas no 
                     arquivo <span className="italic"> '.env'</span>, na raiz do projeto, seguindo o seguinte formato:
                 </p>
-                <SyntaxHighlighter language="javascript" style={docco}>
-                    {"\
-                        \nOPENAI_KEY=\"sk-rmiH...\"\
+
+                <CodeBlock
+                    text={"OPENAI_KEY=\"sk-rmiH...\"\
                         \nEMAIL_FROM=\"example@gmail.com\"\
                         \nEMAIL_TO=\"example@gmail.com\"\
                         \nDISPLAY_NAME=\"Carlos\"\
                         \nNOTION_DATABASE_ID=\"8be43e...\"\
                         \nNOTION_API_KEY=\"secret_x0l...\"\
                     "}
-                </SyntaxHighlighter>
+                    language={"javascript"}
+                    showLineNumbers={true}
+                    startingLineNumber={1}
+                    theme={atomOneDark}
+                />
 
                 <p class="NormalText">
                     Com os valores de Chave de API e ID do Dataset armazenados no arquivo JSON, o software irá carregar as 
@@ -120,10 +119,67 @@ class NotionChatGPT{
                     Vale ressaltar que todo o código está disponível no <a href="https://github.com/carlosplf/personal-notion-integration"><i className="fa fa-external-link"></i> GitHub</a>. 
                 </p>
 
-                <div className="ArticleImg">
-                    <img src="images/code-01.png" alt="Python code to retrieve tasks from Notion"/>
-                    <p>Código Python para recuperar as tarefas do Notion via API.</p>
-                </div>
+                <CodeBlock
+                    text={'def collect_tasks_from_control_panel(n_days=7):\n'+
+                    '    """\n'+
+                    '    Connect to Notion API and collect Tasks from "Control Panel" database.\n'+
+                    '    """\n'+
+                    '    notion_credentials = load_notion_credentials()\n'+
+                    '    today = datetime.datetime.now()\n'+
+                    '    delta = datetime.timedelta(days=n_days)\n'+
+                    '    one_week = today + delta\n'+
+                    '    one_week = one_week.isoformat()\n'+
+                    '\n'+
+                    '    url = "https://api.notion.com/v1/databases/" + \\n'+
+                    '        notion_credentials["database_id"] + "/query"\n'+
+                    '\n'+
+                    '    payload = {\n'+
+                    '        "filter": {\n'+
+                    '            "and": [\n'+
+                    '                {\n'+
+                    '                    "property": "DONE",\n'+
+                    '                    "checkbox": {"equals": False},\n'+
+                    '                },\n'+
+                    '                {\n'+
+                    '                    "property": "Deadline",\n'+
+                    '                    "date": {"before": str(one_week)}\n'+
+                    '                }\n'+
+                    '            ]\n'+
+                    '        }\n'+
+                    '    }\n'+
+                    '\n'+
+                    '    headers = {\n'+
+                    '        "accept": "application/json",\n'+
+                    '        "Authorization": "Bearer " + notion_credentials["api_key"] + "",\n'+
+                    '        "Notion-Version": "2022-06-28",\n'+
+                    '        "content-type": "application/json"\n'+
+                    '    }\n'+
+                    '\n'+
+                    '    print("Collecting tasks from Notion...")\n'+
+                    '\n'+
+                    '    response = requests.post(url, json=payload, headers=headers)\n'+
+                    '\n'+
+                    '    data = json.loads(response.text)\n'+
+                    '\n'+
+                    '    all_task_data = []\n'+
+                    '\n'+
+                    '    for d in data["results"]:\n'+
+                    '        all_task_data.append(\n'+
+                    '            {\n'+
+                    '                "name": d["properties"]["Task"]["title"][0]["text"]["content"],\n'+
+                    '                "deadline": d["properties"]["Deadline"]["date"]["start"],\n'+
+                    '            }\n'+
+                    '        )\n'+
+                    '\n'+
+                    '    sorted_tasks = sorted(all_task_data, key=lambda d: d["deadline"])\n'+
+                    '\n'+
+                    '    print("Done.")\n'+
+                    '    return sorted_tasks'}
+                    language={"python"}
+                    showLineNumbers={true}
+                    startingLineNumber={1}
+                    theme={atomOneDark}
+                />
 
                 <p class="NormalText">
                     Com as tarefas recuperadas do Notion, precisamos agora enviar para o ChatGPT <span className="bold">para que a AI faça a sua sugestão 
@@ -131,10 +187,54 @@ class NotionChatGPT{
                     exemplo abaixo. Pretendo melhorá-lo, e utilizar o ChatGPT de mais formas neste projeto.
                 </p>
 
-                <div className="ArticleImg">
-                    <img src="images/code-02.png" alt="Python code to call ChatGPT API."/>
-                    <p>Código Python para enviar as tarefas para o ChatGPT.</p>
-                </div>
+                <CodeBlock
+                    text={'import os\n'+
+                    'import openai\n'+
+                    'from dotenv import load_dotenv\n'+
+                    '\n'+
+                    '\n'+
+                    'def call_openai_assistant(tasks):\n'+
+                    '    load_dotenv()\n'+
+                    '    openai.api_key = os.getenv("OPENAI_KEY")\n'+
+                    '\n'+
+                    '    print("Calling ChatGPT. This can take a while...")\n'+
+                    '\n'+
+                    '    completion = openai.ChatCompletion.create(\n'+
+                    '        model="gpt-3.5-turbo",\n'+
+                    '        messages=[\n'+
+                    '            {\n'+
+                    '                "role": "assistant",\n'+
+                    '                "content": build_message(tasks)\n'+
+                    '            }\n'+
+                    '        ]\n'+
+                    '    )\n'+
+                    '\n'+
+                    '    answer = completion.choices[0].message.content\n'+
+                    '    return answer\n'+
+                    '\n'+
+                    '\n'+
+                    'def build_message(tasks):\n'+
+                    '    message = "Using few words, please help me to prioritize " + \\ \n'+
+                    '        "the following tasks. Answer in portuguese. Explain the " + \\ \n'+
+                    '        "importance of each one of the tasks and why they are " + \\ \n'+
+                    '        "piority or not when compared to the others. " + \\ \n'+
+                    '        "Also estimate the time to complete each one." + \\ \n'+
+                    '        "\\n Instructions:" + \\ \n'+
+                    '        "\\n- Be brief and explain the prioritization." + \\ \n'+
+                    '        "\\n- Tasks are in portuguese." + \\ \n'+
+                    '        "\\n- Answer with the format: #. <task_description> " + \\ \n'+
+                    '        "- (<explanation_about_importance>) - <time_estimation>" + \\ \n'+
+                    '        "\\nTasks: "\\ \n'+ 
+                    '\n'+
+                    '    for task in tasks:\n'+
+                    '        message += "\\n - " + task["name"]\n'+
+                    '\n'+
+                    '    return message'}
+                    language={"python"}
+                    showLineNumbers={true}
+                    startingLineNumber={1}
+                    theme={atomOneDark}
+                />
 
                 <p class="NormalText">
                     Como última parte do projeto, vamos montar o HTML e enviar via email para o usuário. Para enviar o email, vamos 
@@ -146,10 +246,51 @@ class NotionChatGPT{
                     O trecho de código abaixo mostra um pouco do processo para enviar o email com as tarefas.
                 </p>
 
-                <div className="ArticleImg">
-                    <img src="images/code-03.png" alt="Python code to send email with tasks."/>
-                    <p>Código Python para enviar o report de tarefas via email.</p>
-                </div>
+                <CodeBlock
+                    text={'def send_email_with_tasks(all_tasks, chatgpt_answer):\n'+
+                    '    """\n'+
+                    '    Considering a already created token.json file based on GCloud credentials,\n'+
+                    '    send an email using GMail API.\n'+
+                    '    """\n'+
+                    '    print("Sending email...")\n'+
+                    '    creds = Credentials.from_authorized_user_file("token.json", SCOPES)\n'+
+                    '    email_config = load_email_config()\n'+
+                    '    email_message = build_email_body(\n'+
+                    '        all_tasks,\n'+
+                    '        email_config["display_name"],\n'+
+                    '        chatgpt_answer\n'+
+                    '    )\n'+
+                    '\n'+
+                    '    try:\n'+
+                    '        service = build("gmail", "v1", credentials=creds)\n'+
+                    '        message = MIMEText(email_message, "html")\n'+
+                    '\n'+
+                    '        message["To"] = email_config["email_to"]\n'+
+                    '        message["From"] = email_config["email_from"]\n'+
+                    '        message["Subject"] = "My Notion Bot - Tasks"\n'+
+                    '\n'+
+                    '        encoded_message = base64.urlsafe_b64encode(message.as_bytes()) \\n'+
+                    '            .decode()\n'+
+                    '\n'+
+                    '        create_message = {\n'+
+                    '            "raw": encoded_message\n'+
+                    '        }\n'+
+                    '\n'+
+                    '        send_message = (service.users().messages().send\n'+
+                    '                        (userId="me", body=create_message).execute())\n'+
+                    '\n'+
+                    '        print("Done.")\n'+
+                    '\n'+
+                    '    except HttpError as error:\n'+
+                    '        print(F"An error occurred: {error}")\n'+
+                    '        send_message = None\n'+
+                    '\n'+
+                    '    return send_message'}
+                    language={"python"}
+                    showLineNumbers={true}
+                    startingLineNumber={1}
+                    theme={atomOneDark}
+                />
 
                 <p class="NormalText">
                     <span className="bold">IMPORTANTE:</span> as configurações de endereço de emails (tanto o 'from' quanto o 'to'), bem como o nome do usuário que irá 
