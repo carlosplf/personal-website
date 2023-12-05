@@ -16,13 +16,13 @@ function HomeBody() {
                 <p>Também ajudei a construir e colocar para rodar o ITI MBA, na UFSCar, e hoje sou Coordenador de Mercado no programa.</p>
                 <div className="SocialLinks">
                     <div className="SocialLink">
-                        <img className="SocialIcon" src="./images/linkedin-logo.jpeg"/> <a href="https://www.linkedin.com/in/carlosplf/"> LinkedIn </a>
+                        <img className="SocialIcon" src="/images/linkedin-logo.jpeg"/> <a href="https://www.linkedin.com/in/carlosplf/"> LinkedIn </a>
                     </div>
                     <div className="SocialLink">
-                        <img className="SocialIcon" src="./images/github-logo.jpeg"/> <a href="https://github.com/carlosplf/"> GitHub </a>
+                        <img className="SocialIcon" src="/images/github-logo.jpeg"/> <a href="https://github.com/carlosplf/"> GitHub </a>
                     </div>
                     <div className="SocialLink">
-                        <img className="SocialIcon" src="./images/twitter-logo.jpeg"/> <a href="https://twitter.com/carlosplfilho/"> Twitter </a>
+                        <img className="SocialIcon" src="/images/twitter-logo.jpeg"/> <a href="https://twitter.com/carlosplfilho/"> Twitter </a>
                     </div>
                 </div>
             </div>
