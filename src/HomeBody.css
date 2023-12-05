@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 120px;
   padding-left: 10px;
   padding-right: 10px;
   width: 100%;
@@ -143,7 +143,7 @@
 and (max-width : 1080px){
   .HomeBody{
     width: 90%;
-    margin-top: 80px;
+    margin-top: 180px;
   }
 
   .About{
