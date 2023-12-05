@@ -8,9 +8,12 @@ function HomeBody() {
 
             <div className="About">
                 <h1>&#128188; - Sobre mim:</h1>
-                <p>Diretor de Tecnologia e CTO Brasil na <a id="media_monks_link" href="https://media.monks.com/">Media.Monks</a>.</p>
-                <p>Coordenador de mercado no ITI MBA, da UFSCar.</p>
-                <p>Aluno de Mestrado em Machine Learning pela UFSCar.</p>
+                <p>
+                  Nascido em São Carlos - SP, Graduado em Ciências da Computação pela Universidade de São Paulo - ICMC. Atualmente sou aluno de Mestrado pela
+                  UFSCar, na Área de Machine Learning e GNN. Profissionalmente atuo hoje como CTO e Diretor de Tecnologia na Media.Monks Brasil, uma
+                  das maiores empresas de Publicidade, Dados e Tecnologia do mundo, com mais de 9000 colaboradores e presente em 35 países.
+                </p>
+                <p>Também ajudei a construir e colocar para rodar o ITI MBA, na UFSCar, e hoje sou Coordenador de Mercado no programa.</p>
                 <div className="SocialLinks">
                     <div className="SocialLink">
                         <img className="SocialIcon" src="./images/linkedin-logo.jpeg"/> <a href="https://www.linkedin.com/in/carlosplf/"> LinkedIn </a>
@@ -40,7 +43,6 @@ function HomeBody() {
             <div className="AllProjects">
                 <h1>&#128187; -  Projetos: </h1>
                 <div className="ProjectSession">
-                    <a href="https://brdata.site"><img className="ProjectIcon" src="./images/br-data-square.jpeg"/></a>
                     <div className="ProjectDetails">
                         <a id="brdata_link" href="https://brdata.site"><i className="fa fa-external-link"></i> BRData Collector.</a>
                         <p>Portal para pesquisa sobre Gastos, Contratos e Licitações de instituições do Governo Federal. Também é possível pesquisar sobre Empresas que prestam serviço para Entidades Federais.</p>
@@ -49,7 +51,6 @@ function HomeBody() {
                 </div>
 
                 <div className="ProjectSession">
-                    <a href="https://ml.carlosplf.com.br"><img className="ProjectIcon" src="./images/cats-dogs-square.jpeg"/></a>
                     <div className="ProjectDetails">
                         <a id="catsdogs_link" href="https://ml.carlosplf.com.br"><i className="fa fa-external-link"></i> Cats and Dogs classifier.</a>
                         <p>Modelo de Machine Learning classificador de Gatos e Cachorros com base em imagem. Através da página, usuários podem submeter imagens para classificação.</p>

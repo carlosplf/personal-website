@@ -23,7 +23,6 @@ class NotionChatGPT{
                     tarefas no formato 'ToDo list' e faço anotações sobre minhas prioridades e projetos. Também o uso 
                     constantemente enquanto estudo e planejo meus projetos pessoais, como este.
                 </p>
-                <p class="NormalText"></p>
                 <p class="NormalText">
                     Com isso em mente, pensei que seria interessante criar algum sistema que me trouxesse algumas informações 
                     do meu Notion para o meu email diariamente. Dessa forma, eu teria essas informações dentro da mesma ferramenta 

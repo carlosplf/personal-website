@@ -1,190 +1,231 @@
 .HomeBody{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin-top: 20px;
-    padding-left: 60px;
-    width: 60%;
-    padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  padding-bottom: 100px;
 }
 
 .HomeBody h1{
-    font-size: 1.8em;
-    color: #383838;
-    margin-top: 40px;
-    margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #383838;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.About {
+  width: 60%;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+
+.AllProjects {
+  width: 60%;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
 }
 
 .ProjectSession{
-    display: flex;
-    width: 100%;
-    margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  flex-direction: column;
 }
 
 .ProjectDetails a{
-    font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 .ProjectIcon {
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-    margin-top: 20px;
-    border-radius: 10px ;
-}
-
-.ArticleLink{
-    margin-top: 30px;
-}
-
-.ArticleLink a{
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
-    background: linear-gradient(90deg, rgba(0,74,172,1) 0%, rgb(29, 155, 240) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.AllProjects{
-    margin-top: 20px;
-}
-
-.About h1{
-    margin-bottom: 40px;
-}
-.About p{
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 1.0em;
-    text-align: justify;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 10px ;
 }
 
 .Articles{
-    margin-top: 20px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 60%;
+}
+
+.ArticleLink{
+  margin-top: 30px;
+}
+
+.ArticleLink a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  background: linear-gradient(90deg, rgba(0,74,172,1) 0%, rgb(29, 155, 240) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.AllProjects{
+  margin-top: 20px;
+}
+
+.About h1{
+  margin-bottom: 40px;
+}
+.About p{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.0em;
+  text-align: justify;
+}
+
+.Articles{
+  margin-top: 20px;
 }
 
 .SocialLinks{
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .SocialLink{
-    display: flex;
-    flex-direction: row;
-    height: 20px;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  margin-top: 20px;
 }
 
 .SocialLink a{
-    font-size: 1.1em;
-    text-decoration: none;
-    font-weight: bold;
-    color: #303030;
+  font-size: 1.1em;
+  text-decoration: none;
+  font-weight: bold;
+  color: #303030;
 }
 
 .SocialIcon{
-    height: 20px;
-    width: 20px;
-    border-radius: 4px;
-    margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+  margin-right: 10px;
 }
 
 #brdata_link{
-    font-weight: bold;
-    background: linear-gradient(90deg, rgb(0, 118, 4) 0%, rgb(226, 214, 43) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  background: linear-gradient(90deg, rgb(0, 118, 4) 0%, rgb(226, 214, 43) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #catsdogs_link{
-    font-weight: bold;
-    background: linear-gradient(90deg, rgb(189, 28, 243) 0%, rgb(43, 99, 255) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  background: linear-gradient(90deg, rgb(189, 28, 243) 0%, rgb(43, 99, 255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #media_monks_link{
-    font-weight: bold;
-    background: linear-gradient(90deg, #FFB2E8 0%, #4F24EE 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  background: linear-gradient(90deg, #FFB2E8 0%, #4F24EE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .fa-external-link{
-    margin-right: 6px;
+  margin-right: 6px;
 }
 
 @media only screen
 and (max-width : 1080px){
-    .HomeBody{
-        width: 90%;
-        margin-top: 80px;
-    }
+  .HomeBody{
+    width: 90%;
+    margin-top: 80px;
+  }
 
-    .ProjectDetails {
-        font-size: 1.0em;
-        margin-top: 60px;
-    }
+  .About{
+    width: 90%;
+  }
+  
+  .About p{
+    font-size: 1.4em;
+  }
+  
+  .Articles{
+    width: 90%;
+  }
 
-    .ProjectIcon{
-        margin-top: 10%;
-        padding: 20px;
-    }
+  .AllProjects{
+    width: 90%;
+  }
 
-    .HomeBody h1{
-        font-size: 3.4em;
-    }
+  .ProjectDetails {
+    font-size: 1.0em;
+    margin-top: 60px;
+  }
 
-    .ArticleLink{
-        font-size: 1.2em;
-        margin-top: 40px;
-    }
+  .ProjectIcon{
+    margin-top: 10%;
+    padding: 20px;
+  }
 
-    .AllProjects{
-        margin-top: 80px;
-    }
-    
-    .About h1{
-        margin-bottom: 40px;
-    }
-    .About p{
-        margin-top: 20px;
-        font-size: 1.2em;
-        margin-bottom: 20px;
-    }
-    
-    .Articles{
-        margin-top: 80px;
-    }
+  .HomeBody h1{
+    font-size: 3.4em;
+  }
 
-    .SocialLink{
-        height: 40px;
-        margin-top: 60px;
-    }
-    
-    .SocialLink a{
-        font-size: 2.4em;
-        color: #222222;
-    }
-    
-    .SocialIcon{
-        height: 40px;
-        width: 40px;
-        border-radius: 4px;
-        margin-right: 10px;
-    }
+  .ArticleLink{
+    font-size: 1.2em;
+    margin-top: 40px;
+  }
 
-    .ProjectDetails{
-        color: #202020;
-        font-size: 1.2em;
-    }
+  .AllProjects{
+    margin-top: 80px;
+  }
 
-    .ProjectIcon{
-        margin-top: 80%;
-    }
+  .About h1{
+    margin-bottom: 40px;
+  }
+  .About p{
+    margin-top: 20px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
 
-    .fa-external-link{
-        margin-right: 12px;
-    }
-    
+  .Articles{
+    margin-top: 80px;
+  }
+
+  .SocialLink{
+    height: 40px;
+    margin-top: 60px;
+  }
+
+  .SocialLink a{
+    font-size: 2.4em;
+    color: #222222;
+  }
+
+  .SocialIcon{
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+
+  .ProjectDetails{
+    color: #202020;
+    font-size: 1.2em;
+  }
+
+  .ProjectIcon{
+    margin-top: 80%;
+  }
+
+  .fa-external-link{
+    margin-right: 12px;
+  }
+
 }
