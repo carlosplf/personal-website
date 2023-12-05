@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://carlosplf.github.io/personal-website/static/css/main.0f3e2f6a.css",
-    "main.js": "https://carlosplf.github.io/personal-website/static/js/main.a9187ea0.js",
+    "main.js": "https://carlosplf.github.io/personal-website/static/js/main.58d40c63.js",
     "react-syntax-highlighter/refractor-core-import.js": "https://carlosplf.github.io/personal-website/static/js/react-syntax-highlighter/refractor-core-import.b237744c.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "https://carlosplf.github.io/personal-website/static/js/react-syntax-highlighter_languages_refractor_abap.f04f0948.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "https://carlosplf.github.io/personal-website/static/js/react-syntax-highlighter_languages_refractor_actionscript.c002bc73.chunk.js",
@@ -156,7 +156,7 @@
     "react-syntax-highlighter_languages_refractor_yaml.js": "https://carlosplf.github.io/personal-website/static/js/react-syntax-highlighter_languages_refractor_yaml.618c2d0b.chunk.js",
     "index.html": "https://carlosplf.github.io/personal-website/index.html",
     "main.0f3e2f6a.css.map": "https://carlosplf.github.io/personal-website/static/css/main.0f3e2f6a.css.map",
-    "main.a9187ea0.js.map": "https://carlosplf.github.io/personal-website/static/js/main.a9187ea0.js.map",
+    "main.58d40c63.js.map": "https://carlosplf.github.io/personal-website/static/js/main.58d40c63.js.map",
     "refractor-core-import.b237744c.chunk.js.map": "https://carlosplf.github.io/personal-website/static/js/react-syntax-highlighter/refractor-core-import.b237744c.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.f04f0948.chunk.js.map": "https://carlosplf.github.io/personal-website/static/js/react-syntax-highlighter_languages_refractor_abap.f04f0948.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.c002bc73.chunk.js.map": "https://carlosplf.github.io/personal-website/static/js/react-syntax-highlighter_languages_refractor_actionscript.c002bc73.chunk.js.map",
@@ -312,6 +312,6 @@
   },
   "entrypoints": [
     "static/css/main.0f3e2f6a.css",
-    "static/js/main.a9187ea0.js"
+    "static/js/main.58d40c63.js"
   ]
 }
