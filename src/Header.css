@@ -10,17 +10,17 @@
   float: left;
   margin-bottom: 20px;
   padding-left: 40px;
-  background: rgba(25,25,25,.75);
+  background: rgba(255,255,255,.60);
   backdrop-filter: blur(10px)
 }
 
 .Header a{
   text-decoration: none;
-  color: #fff;
+  color: #222;
 }
 
 .Header #Subtitle{
-  color: #fff;
+  color: #222;
 }
 
 #SiteName{
