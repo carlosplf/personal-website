@@ -10,10 +10,11 @@ function HomeBody() {
                 <h1>&#128188; - Sobre mim:</h1>
                 <p>
                   Nascido em São Carlos - SP, Graduado em Ciências da Computação pela Universidade de São Paulo - ICMC. Atualmente sou aluno de Mestrado pela
-                  UFSCar, na Área de Machine Learning e GNN. Profissionalmente atuo hoje como CTO e Diretor de Tecnologia na Media.Monks Brasil, uma
+                  UFSCar, na Área de Machine Learning e Graph Neural Networks (GNN). Profissionalmente atuo hoje como CTO e Diretor de Tecnologia na Media.Monks, uma
                   das maiores empresas de Publicidade, Dados e Tecnologia do mundo, com mais de 9000 colaboradores e presente em 35 países.
                 </p>
-                <p>Também ajudei a construir e colocar para rodar o ITI MBA, na UFSCar, e hoje sou Coordenador de Mercado no programa.</p>
+                <p>Também ajudei no projeto de construção e execução do ITI MBA, curso de MBA oferecido pela UFSCar. Hoje atuo como Coordenador de alguns cursos e 
+                  membro da Fundação ITI.</p>
                 <div className="SocialLinks">
                     <div className="SocialLink">
                         <img className="SocialIcon" src="/images/linkedin-logo.jpeg"/> <a href="https://www.linkedin.com/in/carlosplf/"> LinkedIn </a>
