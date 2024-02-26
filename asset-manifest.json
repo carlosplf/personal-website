@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://www.carlosplf.com.br/static/css/main.402c5a11.css",
-    "main.js": "https://www.carlosplf.com.br/static/js/main.eef66dc1.js",
+    "main.js": "https://www.carlosplf.com.br/static/js/main.fc8c5636.js",
     "react-syntax-highlighter/refractor-core-import.js": "https://www.carlosplf.com.br/static/js/react-syntax-highlighter/refractor-core-import.b237744c.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "https://www.carlosplf.com.br/static/js/react-syntax-highlighter_languages_refractor_abap.f04f0948.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "https://www.carlosplf.com.br/static/js/react-syntax-highlighter_languages_refractor_actionscript.c002bc73.chunk.js",
@@ -156,7 +156,7 @@
     "react-syntax-highlighter_languages_refractor_yaml.js": "https://www.carlosplf.com.br/static/js/react-syntax-highlighter_languages_refractor_yaml.618c2d0b.chunk.js",
     "index.html": "https://www.carlosplf.com.br/index.html",
     "main.402c5a11.css.map": "https://www.carlosplf.com.br/static/css/main.402c5a11.css.map",
-    "main.eef66dc1.js.map": "https://www.carlosplf.com.br/static/js/main.eef66dc1.js.map",
+    "main.fc8c5636.js.map": "https://www.carlosplf.com.br/static/js/main.fc8c5636.js.map",
     "refractor-core-import.b237744c.chunk.js.map": "https://www.carlosplf.com.br/static/js/react-syntax-highlighter/refractor-core-import.b237744c.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.f04f0948.chunk.js.map": "https://www.carlosplf.com.br/static/js/react-syntax-highlighter_languages_refractor_abap.f04f0948.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.c002bc73.chunk.js.map": "https://www.carlosplf.com.br/static/js/react-syntax-highlighter_languages_refractor_actionscript.c002bc73.chunk.js.map",
@@ -312,6 +312,6 @@
   },
   "entrypoints": [
     "static/css/main.402c5a11.css",
-    "static/js/main.eef66dc1.js"
+    "static/js/main.fc8c5636.js"
   ]
 }
