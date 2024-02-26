@@ -31,6 +31,9 @@ function HomeBody() {
             <div className="Articles">
                 <h1>&#128214; - Textos:</h1>
                 <div className="ArticleLink">
+                    <Link to="/retail-media">Retail Media e desafios de Tecnologia.</Link>
+                </div>
+                <div className="ArticleLink">
                     <Link to="/notion-gpt">Notion + ChatGPT.</Link>
                 </div>
                 <div className="ArticleLink">

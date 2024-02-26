@@ -11,6 +11,7 @@ import Zanzibar from './articles/Zanzibar.js';
 import MaturidadeDados from './articles/MaturidadeDados.js';
 import NotionChatGPT from './articles/NotionChatGPT';
 import CatsDogsProject from './articles/CatsDogsProject';
+import RetailMedia from './articles/RetailMedia.js'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
         <Routes>
             <Route path="/" element={<Home/>} />
+            <Route path="/retail-media" element={<ArticlePage content={new RetailMedia()}/>} />
             <Route path="/maturidade_dados" element={<ArticlePage content={new MaturidadeDados()}/>} />
             <Route path="/zanzibar" element={<ArticlePage content={new Zanzibar()}/>} />
             <Route path="/notion-gpt" element={<ArticlePage content={new NotionChatGPT()}/>} />
