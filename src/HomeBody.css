@@ -72,6 +72,10 @@
   -webkit-text-fill-color: transparent;
 }
 
+.article-date{
+  font-style: italic;
+}
+
 .AllProjects{
   margin-top: 20px;
 }

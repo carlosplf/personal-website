@@ -32,15 +32,38 @@ function HomeBody() {
                 <h1>&#128214; - Textos:</h1>
                 <div className="ArticleLink">
                     <Link to="/retail-media">Retail Media e desafios de Tecnologia.</Link>
+                    <p className="article-date">26 de Fevereiro de 2024</p>
+                    <p className="article-summary">
+                      Estratégias de Reail Media continuam crescendo e ganhando espaço dentro de 
+                      grandes varejistas, mas existe ainda um oceano de possibilidades para tornar 
+                      essa estratégia mais eficiente.
+                    </p>
                 </div>
                 <div className="ArticleLink">
                     <Link to="/notion-gpt">Notion + ChatGPT.</Link>
+                    <p className="article-date">27 de Maio de 2023</p>
+                    <p className="article-summary">
+                      Tanto o Notion quanto o ChatGPT se tornaram ferramentas populares para ajudar 
+                      com organização de tarefas e otimização de tempo. Neste artigo eu mostro como 
+                      usar ambas as ferramentas para compreender tarefas e sugerir uma priorização 
+                      automática e inteligente.
+                    </p>
                 </div>
                 <div className="ArticleLink">
                     <Link to="/maturidade_dados">Integrar os Dados é só o Começo.</Link>
+                    <p className="article-date">14 de Agosto de 2022</p>
+                    <p className="article-summary">
+                      Artigo que escrevi para ajudar empresas na busca pela evolução na maturidade de 
+                      dados.
+                    </p>
                 </div>
                 <div className="ArticleLink">
                     <Link to="/zanzibar">Zanzibar: O Sistema de autorizações global do Google.</Link>
+                    <p className="article-date">14 de Agosto de 2022</p>
+                    <p className="article-summary">
+                      Um breve resumo sobre o Zanzibar, sistema de controle de acessos e autorizações 
+                      usado pelo Google.
+                    </p>
                 </div>
             </div>
 
