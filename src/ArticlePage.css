@@ -130,4 +130,8 @@ and (max-width : 1080px){
     .DateContainer{
         margin-left: 4%;
     }
+
+    .NormalText{
+        font-size: 1.4em;
+    }
 }
