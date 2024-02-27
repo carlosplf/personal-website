@@ -86,7 +86,7 @@
 .About p{
   margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-align: justify;
 }
 
@@ -156,7 +156,7 @@ and (max-width : 1080px){
   }
   
   .About p{
-    font-size: 1.4em;
+    font-size: 1.8em;
   }
   
   .Articles{
@@ -182,7 +182,7 @@ and (max-width : 1080px){
   }
 
   .ArticleLink{
-    font-size: 1.2em;
+    font-size: 1.8em;
     margin-top: 40px;
   }
 
@@ -193,9 +193,9 @@ and (max-width : 1080px){
   .About h1{
     margin-bottom: 40px;
   }
+
   .About p{
     margin-top: 20px;
-    font-size: 1.2em;
     margin-bottom: 20px;
   }
 
@@ -222,7 +222,7 @@ and (max-width : 1080px){
 
   .ProjectDetails{
     color: #202020;
-    font-size: 1.2em;
+    font-size: 1.8em;
   }
 
   .ProjectIcon{
