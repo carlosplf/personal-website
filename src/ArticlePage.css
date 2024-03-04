@@ -52,6 +52,14 @@
     margin-bottom: 20px;
 }
 
+.SubTitle-2{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: rgba(90,90,90)
+}
+
 .TitleContainer{
     margin-left: 10%;
 }

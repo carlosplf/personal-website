@@ -12,6 +12,7 @@ import MaturidadeDados from './articles/MaturidadeDados.js';
 import NotionChatGPT from './articles/NotionChatGPT';
 import CatsDogsProject from './articles/CatsDogsProject';
 import RetailMedia from './articles/RetailMedia.js'
+import GrafosEstrategia from './articles/GrafosEstrategia.js'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <div className="App">
         <Routes>
             <Route path="/" element={<Home/>} />
+            <Route path="/grafos-estrategia" element={<ArticlePage content={new GrafosEstrategia()}/>} />
             <Route path="/retail-media" element={<ArticlePage content={new RetailMedia()}/>} />
             <Route path="/maturidade_dados" element={<ArticlePage content={new MaturidadeDados()}/>} />
             <Route path="/zanzibar" element={<ArticlePage content={new Zanzibar()}/>} />

@@ -31,6 +31,15 @@ function HomeBody() {
             <div className="Articles">
                 <h1>&#128214; - Textos:</h1>
                 <div className="ArticleLink">
+                    <Link to="/grafos-estrategia">Como o uso de Grafos pode transformar Estratégias Digitais</Link>
+                    <p className="article-date">04 de Março de 2024</p>
+                    <p className="article-summary">
+                      A chave para bons resultados de performance em mídias digitais está em saber mostrar o anúncio
+                      certo, para a pessoa certa e no momento certo. E se usarmos estruturas de Grafos para mapear
+                      a jornada do usuário de forma inovadora e mais inteligente?
+                    </p>
+                </div>
+                <div className="ArticleLink">
                     <Link to="/retail-media">Retail Media e desafios de Tecnologia.</Link>
                     <p className="article-date">26 de Fevereiro de 2024</p>
                     <p className="article-summary">
