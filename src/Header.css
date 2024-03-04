@@ -6,9 +6,8 @@
   z-index: 2;
   display: flex;
   width: 100%;
-  min-height: 80px;
+  height: 60px;
   float: left;
-  padding-left: 40px;
   background: rgba(255,255,255,.60);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(120,120,120);
@@ -17,11 +16,10 @@
 
 .background-image{
   display: flex;
-  direction: row;
 }
 
 .author-name{
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 #profile-pic{
@@ -46,7 +44,7 @@
 }
 
 #Subtitle{
-  font-size: 1.2em;
+  font-size: 1.0em;
 }
 
 #SiteName:hover{
