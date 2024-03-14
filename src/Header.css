@@ -55,9 +55,10 @@
 and (max-width : 1080px){
   .Header{
     width: 100%;
+    min-height: 180px;
   }
   #SiteName{
-    font-size: 2.4em;
+    font-size: 2.8em;
   }
   #Subtitle{
     font-size: 1.8em;
