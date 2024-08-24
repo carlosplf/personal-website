@@ -1,5 +1,6 @@
 .ArticleContainer{
     width: 70%;
+    max-width: 1000px;
     margin-top: 180px;
     font-family: Source Serif Pro, serif;
     padding-bottom: 100px;

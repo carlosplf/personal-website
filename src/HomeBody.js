@@ -29,7 +29,18 @@ function HomeBody() {
             </div>
 
             <div className="Articles">
-                <h1>&#128214; - Textos:</h1>
+                <h1>&#128214; - Textos e publicações:</h1>
+                <div className="ArticleLink">
+                    <a href="https://www.monks.com/pt/articles/o-hype-da-ia-generativa-e-o-real-impacto-no-agora">O hype da IA generativa e o real impacto no agora</a>
+                    <p className="article-date">20 de Agosto de 2024</p>
+                    <p className="article-summary">
+                      Nos últimos anos, a inteligência artificial generativa tem sido um dos tópicos 
+                      mais discutidos no campo da tecnologia e ganhado destaque em uma velocidade que 
+                      não é vista há muito tempo. Segundo uma pesquisa da Forbes, 60% dos empresários 
+                      acreditam que ferramentas de IA podem aumentar a produtividade e ajudar os seus 
+                      negócios. Estamos falando, portanto, de um tema muito relevante.
+                    </p>
+                </div>
                 <div className="ArticleLink">
                     <Link to="/grafos-estrategia">Como o uso de Grafos pode transformar Estratégias Digitais</Link>
                     <p className="article-date">04 de Março de 2024</p>
